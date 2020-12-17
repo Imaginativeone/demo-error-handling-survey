@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Error Handling</title>
+    <meta name="description" content="error-handling-demo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Error Handling (Survey) Demo</h1>
+    <form name="genform" value="survey" id="survey">
+      <div class="form-control">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <h3>My Learning Experience Was...</h3>
+      <div class="form-control">
+        <input type="radio" id="grade-poor" value="poor" name="grade" checked>
+        <label for="grade-poor">Poor</label>
+      </div>
+      <div class="form-control">
+        <input type="radio" id="grade-average" value="average" name="grade">
+        <label for="grade-average">Average</label>
+      </div>
+      <div class="form-control">
+        <input type="radio" id="grade-great" value="great" name="grade">
+        <label for="grade-great">Great</label>
+      </div>
+      <button click="createPerson($event)">Create a Person</button>
+      <!-- <button "click=onSubmit()">Submit</button> -->
+    </form>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
